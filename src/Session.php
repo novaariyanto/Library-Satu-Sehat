@@ -8,7 +8,7 @@ use kejarkoding\SatuSehat\Util\HttpRequest;
 use kejarkoding\SatuSehat\Util\Security;
 use kejarkoding\SatuSehat\Util\Url;
 
-class Sessions
+class Session
 
 {
     public static function getPatientByNik($nik)
