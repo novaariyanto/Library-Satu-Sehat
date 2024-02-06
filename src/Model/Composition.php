@@ -1,0 +1,148 @@
+<?php
+
+namespace novaariyanto\SatuSehat\Model;
+
+use novaariyanto\SatuSehat\Util\DateTimeFormat;
+use novaariyanto\SatuSehat\Util\Enviroment;
+
+class Composition
+{
+    public static function formCreateData($encounter,$noRawat,$code,$name,$text)
+    {
+        $organizationId = Enviroment::organizationId();
+        return [
+            "resourceType"=> "Composition",
+            "identifier"=> [
+                "system"=> "http://sys-ids.kemkes.go.id/composition/".$organizationId,
+                "value"=> $noRawat
+            ],
+            "status"=> "final",
+            "type"=> [
+                "coding"=> [
+                    [
+                        "system"=> "http://loinc.org",
+                        "code"=> "18842-5",
+                        "display"=> "Discharge summary"
+                    ]
+                ]
+            ],
+            "category"=> [
+                [
+                    "coding"=> [
+                        [
+                            "system"=> "http://loinc.org",
+                            "code"=> "LP173421-1",
+                            "display"=> "Report"
+                        ]
+                    ]
+                ]
+            ],
+            "subject"=> [
+                "reference"=> "Patient/".$encounter->patient->ihs_number,
+                "display"=> $encounter->patient->name
+            ],
+            "encounter"=> [
+                "reference"=> "Encounter/".$encounter->ihs_number,
+                "display"=> "Diet pasien ".$encounter->patient->name." pada ".$encounter->period_start
+            ],
+            "date"=> DateTimeFormat::now(),
+            "author"=> [
+                [
+                    "reference"=> "Practitioner/".$encounter->practitioner->ihs_number,
+                    "display"=> $encounter->practitioner->name
+                ]
+            ],
+            "title"=> "Diet Pasien",
+            "custodian"=> [
+                "reference"=> "Organization/".$organizationId
+            ],
+            "section"=> [
+                [
+                    "code"=> [
+                        "coding"=> [
+                            [
+                                "system"=> "http://loinc.org",
+                                "code"=> $code,
+                                "display"=> $name
+                            ]
+                        ]
+                    ],
+                    "text"=> [
+                        "status"=> "additional",
+                        "div"=> $text
+                    ]
+                ]
+            ]
+        ];
+    }
+
+    public static function formUpdateData($ihsNumber,$encounter,$noRawat,$code,$name,$text)
+    {
+        $organizationId = Enviroment::organizationId();
+        return [
+            "id"=> $ihsNumber,
+            "resourceType"=> "Composition",
+            "identifier"=> [
+                "system"=> "http://sys-ids.kemkes.go.id/composition/".$organizationId,
+                "value"=> $noRawat
+            ],
+            "status"=> "final",
+            "type"=> [
+                "coding"=> [
+                    [
+                        "system"=> "http://loinc.org",
+                        "code"=> "18842-5",
+                        "display"=> "Discharge summary"
+                    ]
+                ]
+            ],
+            "category"=> [
+                [
+                    "coding"=> [
+                        [
+                            "system"=> "http://loinc.org",
+                            "code"=> "LP173421-1",
+                            "display"=> "Report"
+                        ]
+                    ]
+                ]
+            ],
+            "subject"=> [
+                "reference"=> "Patient/".$encounter->patient->ihs_number,
+                "display"=> $encounter->patient->name
+            ],
+            "encounter"=> [
+                "reference"=> "Encounter/".$encounter->ihs_number,
+                "display"=> "Diet pasien ".$encounter->patient->name." pada ".$encounter->period_start
+            ],
+            "date"=> DateTimeFormat::parse($encounter->period_start),
+            "author"=> [
+                [
+                    "reference"=> "Practitioner/".$encounter->practitioner->ihs_number,
+                    "display"=> $encounter->practitioner->name
+                ]
+            ],
+            "title"=> "Diet Pasien",
+            "custodian"=> [
+                "reference"=> "Organization/".$organizationId
+            ],
+            "section"=> [
+                [
+                    "code"=> [
+                        "coding"=> [
+                            [
+                                "system"=> "http://loinc.org",
+                                "code"=> $code,
+                                "display"=> $name
+                            ]
+                        ]
+                    ],
+                    "text"=> [
+                        "status"=> "additional",
+                        "div"=> $text
+                    ]
+                ]
+            ]
+        ];
+    }
+}

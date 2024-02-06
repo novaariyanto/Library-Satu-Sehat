@@ -1,0 +1,31 @@
+{
+    "name": "novaariyanto/satu-sehat",
+    "description": "Php library for Satu Sehat",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "Nova Ariyanto",
+            "email": "novasampoerna@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "novaariyanto\\SatuSehat\\" : "src/",
+            "novaariyanto\\SatuSehat\\Model\\" : "src/Model/",
+            "novaariyanto\\SatuSehat\\JsonResult\\" : "src/JsonResult/",
+            "novaariyanto\\SatuSehat\\Util\\" : "src/Util/"
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^8.12",
+        "ext-curl": "*",
+        "ext-openssl": "*",
+        "ext-json": "*",
+        "phpseclib/phpseclib": "^3.0"
+    }
+}
