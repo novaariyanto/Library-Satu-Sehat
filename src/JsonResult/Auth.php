@@ -49,9 +49,10 @@ class Auth
         $requestToken = self::requestToken();
         if ($requestToken['status']) {
             $data = $requestToken['data'];
-            session()->put('satusehat_token_key',$data['token']);
-            session()->put('satusehat_token_exp',$data['expired']);
-            session()->put('satusehat_token_created_at',$data['created_at']);
+            $_SESSION['satusehat_token_key'] = $data['token'];
+            $_SESSION['satusehat_token_exp'] = $data['expired'];
+            $_SESSION['satusehat_token_created_at'] = $data['created_at'];
+
             return [
                 'status' => true,
                 'data' => [

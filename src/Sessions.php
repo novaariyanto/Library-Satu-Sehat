@@ -8,7 +8,7 @@ use kejarkoding\SatuSehat\Util\HttpRequest;
 use kejarkoding\SatuSehat\Util\Security;
 use kejarkoding\SatuSehat\Util\Url;
 
-class Session
+class Sessions
 
 {
     public static function getPatientByNik($nik)
@@ -456,7 +456,9 @@ class Session
 
     public static function searchProductsByType($type,$start = 1,$limit = 10)
     {
-        $url = Url::searchProductsByType($type,$start,$limit);
+         $_SESSION['satusehat_token_key'] ;
+         $url = Url::searchProductsByType($type,$start,$limit);
+        
         $http = HttpRequest::get($url);
         if ($http['status']) {
             $response = $http['response'];
