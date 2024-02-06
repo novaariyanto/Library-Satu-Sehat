@@ -2,7 +2,7 @@
     "name": "kejarkoding/library-satu-sehat",
     "description": "Librari Php untuk program aplikasi satu sehat",
     "type": "library",
-    "license": "MIT License",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "kejarkoding\\SatuSehat\\": "src/",
