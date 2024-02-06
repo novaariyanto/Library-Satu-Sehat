@@ -17,16 +17,6 @@
             "email": "bajangsampoerna@gmail.com"
         }
     ],
-    "extra": {
-        "laravel": {
-          "providers": [
-            "kejarkoding\\SatuSehat\\",
-            "kejarkoding\\SatuSehat\\Model",
-            "kejarkoding\\SatuSehat\\JsonResult",
-            "kejarkoding\\SatuSehat\\Util"
-          ]
-        }
-      },
     "minimum-stability": "stable",
     "require": {}
 }
