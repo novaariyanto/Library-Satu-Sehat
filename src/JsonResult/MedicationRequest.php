@@ -1,8 +1,8 @@
 <?php
 
-namespace novaariyanto\SatuSehat\JsonResult;
+namespace kejarkoding\SatuSehat\JsonResult;
 
-use novaariyanto\SatuSehat\Util\StrHelper;
+use kejarkoding\SatuSehat\Util\StrHelper;
 
 class MedicationRequest
 {

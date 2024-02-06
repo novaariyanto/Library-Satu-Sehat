@@ -1,6 +1,6 @@
 <?php
 
-namespace novaariyanto\SatuSehat\JsonResult;
+namespace kejarkoding\SatuSehat\JsonResult;
 
 use phpseclib3\Crypt\AES;
 use phpseclib3\Crypt\PublicKeyLoader;

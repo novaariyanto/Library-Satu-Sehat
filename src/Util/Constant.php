@@ -1,6 +1,6 @@
 <?php
 
-namespace novaariyanto\SatuSehat\Util;
+namespace kejarkoding\SatuSehat\Util;
 
 class Constant
 {

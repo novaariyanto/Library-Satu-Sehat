@@ -1,8 +1,8 @@
 <?php
 
-namespace novaariyanto\SatuSehat\Util;
+namespace kejarkoding\SatuSehat\Util;
 
-use novaariyanto\SatuSehat\JsonResult as JsonResult;
+use kejarkoding\SatuSehat\JsonResult as JsonResult;
 
 class HttpRequest
 {

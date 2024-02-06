@@ -1,10 +1,10 @@
 <?php
 
-namespace novaariyanto\SatuSehat\JsonResult;
+namespace kejarkoding\SatuSehat\JsonResult;
 
 use DateTime;
-use novaariyanto\SatuSehat\Util\Enviroment;
-use novaariyanto\SatuSehat\Util\Url;
+use kejarkoding\SatuSehat\Util\Enviroment;
+use kejarkoding\SatuSehat\Util\Url;
 
 class Auth
 {

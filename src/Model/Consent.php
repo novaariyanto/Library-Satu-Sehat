@@ -1,6 +1,6 @@
 <?php
 
-namespace novaariyanto\SatuSehat\Model;
+namespace kejarkoding\SatuSehat\Model;
 
 class Consent
 {

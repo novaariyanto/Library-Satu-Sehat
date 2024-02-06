@@ -1,6 +1,6 @@
 <?php
 
-namespace novaariyanto\SatuSehat\Util;
+namespace kejarkoding\SatuSehat\Util;
 
 use phpseclib3\Crypt\AES;
 use phpseclib3\Crypt\PublicKeyLoader;

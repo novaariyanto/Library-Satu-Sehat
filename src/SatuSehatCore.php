@@ -1,12 +1,12 @@
 <?php
 
-namespace novaariyanto\SatuSehat;
+namespace kejarkoding\SatuSehat;
 
-use novaariyanto\SatuSehat\Model as Model;
-use novaariyanto\SatuSehat\JsonResult as JsonResult;
-use novaariyanto\SatuSehat\Util\HttpRequest;
-use novaariyanto\SatuSehat\Util\Security;
-use novaariyanto\SatuSehat\Util\Url;
+use kejarkoding\SatuSehat\Model as Model;
+use kejarkoding\SatuSehat\JsonResult as JsonResult;
+use kejarkoding\SatuSehat\Util\HttpRequest;
+use kejarkoding\SatuSehat\Util\Security;
+use kejarkoding\SatuSehat\Util\Url;
 
 class SatuSehatCore
 {

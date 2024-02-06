@@ -1,8 +1,8 @@
 <?php
 
-namespace novaariyanto\SatuSehat\Model;
+namespace kejarkoding\SatuSehat\Model;
 
-use novaariyanto\SatuSehat\Util\Enviroment;
+use kejarkoding\SatuSehat\Util\Enviroment;
 
 class MedicationDispense
 {

@@ -1,29 +1,29 @@
 {
-    "name": "nova/satu-sehat",
+    "name": "kejarkoding/satu-sehat",
     "description": "Librari Php untuk program aplikasi satu sehat",
     "type": "library",
     "license": "MIT License",
     "autoload": {
         "psr-4": {
-            "novaariyanto\\SatuSehat\\": "src/",
-            "novaariyanto\\SatuSehat\\Model\\" : "src/Model/",
-            "novaariyanto\\SatuSehat\\JsonResult\\" : "src/JsonResult/",
-            "novaariyanto\\SatuSehat\\Util\\" : "src/Util/"
+            "kejarkoding\\SatuSehat\\": "src/",
+            "kejarkoding\\SatuSehat\\Model\\" : "src/Model/",
+            "kejarkoding\\SatuSehat\\JsonResult\\" : "src/JsonResult/",
+            "kejarkoding\\SatuSehat\\Util\\" : "src/Util/"
         }
     },
     "authors": [
         {
-            "name": "novaariyanto",
+            "name": "kejarkoding",
             "email": "bajangsampoerna@gmail.com"
         }
     ],
     "extra": {
         "laravel": {
           "providers": [
-            "novaariyanto\\SatuSehat\\",
-            "novaariyanto\\SatuSehat\\Model",
-            "novaariyanto\\SatuSehat\\JsonResult",
-            "novaariyanto\\SatuSehat\\Util"
+            "kejarkoding\\SatuSehat\\",
+            "kejarkoding\\SatuSehat\\Model",
+            "kejarkoding\\SatuSehat\\JsonResult",
+            "kejarkoding\\SatuSehat\\Util"
           ]
         }
       },

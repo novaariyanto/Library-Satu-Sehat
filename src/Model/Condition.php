@@ -1,8 +1,8 @@
 <?php
 
-namespace novaariyanto\SatuSehat\Model;
+namespace kejarkoding\SatuSehat\Model;
 
-use novaariyanto\SatuSehat\Util\StrHelper;
+use kejarkoding\SatuSehat\Util\StrHelper;
 
 class Condition
 {

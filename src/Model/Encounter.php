@@ -1,10 +1,10 @@
 <?php
 
-namespace novaariyanto\SatuSehat\Model;
+namespace kejarkoding\SatuSehat\Model;
 
-use novaariyanto\SatuSehat\Util\DateTimeFormat;
-use novaariyanto\SatuSehat\Util\Enviroment;
-use novaariyanto\SatuSehat\Util\StrHelper;
+use kejarkoding\SatuSehat\Util\DateTimeFormat;
+use kejarkoding\SatuSehat\Util\Enviroment;
+use kejarkoding\SatuSehat\Util\StrHelper;
 
 class Encounter
 {

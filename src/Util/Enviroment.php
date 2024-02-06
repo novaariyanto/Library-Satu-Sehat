@@ -1,6 +1,6 @@
 <?php
 
-namespace novaariyanto\SatuSehat\Util;
+namespace kejarkoding\SatuSehat\Util;
 
 defined('_SATUSEHAT_CLIENT_ID_') or die('Satu Sehat Client Id is required!');
 defined('_SATUSEHAT_CLIENT_SECRET_') or die('Satu Sehat Client Secret is required!');

@@ -1,8 +1,8 @@
 <?php
 
-namespace novaariyanto\SatuSehat\Model;
+namespace kejarkoding\SatuSehat\Model;
 
-use novaariyanto\SatuSehat\Util\DateTimeFormat;
+use kejarkoding\SatuSehat\Util\DateTimeFormat;
 
 class Procedure
 {

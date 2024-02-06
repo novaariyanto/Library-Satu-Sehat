@@ -1,6 +1,6 @@
 <?php
 
-namespace novaariyanto\SatuSehat\JsonResult;
+namespace kejarkoding\SatuSehat\JsonResult;
 
 class Kfa
 {
