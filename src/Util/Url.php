@@ -6,27 +6,52 @@ class Url
 {
     private static function authHost($subUrl)
     {
-        return Constant::$authUrl.'/'.$subUrl;
+        if(_production_){
+            return Constant::$authUrl.'/'.$subUrl;
+        }else{
+            return Constant::$authUrl_dev.'/'.$subUrl;
+        }
+   
     }
 
     private static function baseUrl($subUrl)
     {
-        return Constant::$baseUrl.'/'.$subUrl;
+        if(_production_){
+            return Constant::$baseUrl.'/'.$subUrl;
+        }else{
+            return Constant::$baseUrl_dev.'/'.$subUrl;
+        }
+      
     }
 
     private static function consentUrl($subUrl)
     {
-        return Constant::$consentUrl.'/'.$subUrl;
+        if(_production_){
+            return Constant::$consentUrl.'/'.$subUrl;
+        }else{
+            return Constant::$consentUrl_dev.'/'.$subUrl;
+        }
+     
     }
 
     private static function kfaUrl($subUrl)
     {
-        return Constant::$kfaUrl.'/'.$subUrl;
+        if(_production_){
+            return Constant::$kfaUrl.'/'.$subUrl;
+        }else{
+            return Constant::$kfaUrl_dev.'/'.$subUrl;
+        }
+       
     }
 
     private static function kycUrl($subUrl)
     {
-        return Constant::$kycUrl.'/'.$subUrl;
+        if(_production_){
+            return Constant::$kycUrl.'/'.$subUrl;
+        }else{
+            return Constant::$kycUrl_dev.'/'.$subUrl;
+        }
+      
     }
 
     public static function authUrl()
